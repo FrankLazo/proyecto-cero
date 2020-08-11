@@ -1,0 +1,14 @@
+.topbar
+    display: flex
+    align-items: center
+    padding-right: .75rem
+
+    &__icon
+        margin-right: 1rem
+
+        span
+            margin-left: .25rem
+    
+    @include laptop
+        &__icon:nth-child(2)
+            margin-right: 0

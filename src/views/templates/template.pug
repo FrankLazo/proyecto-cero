@@ -1,0 +1,29 @@
+include ../config/config
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        script(src="https://kit.fontawesome.com/ac20f32be7.js" crossorigin="anonymous")
+        title Proyecto cero
+    body
+        header#header.header
+            a(href="/").logo
+                img(src="./assets/img/logo.png", alt="Logo del sitio")
+            .topbar
+                .topbar__icon
+                    i.fas.fa-user
+                    span Login
+                .topbar__icon
+                    i.fas.fa-user-plus
+                    span Register
+                .toggle-menu
+                    #toggle-menu.toggle-menu__icon
+                        .first-bar
+                        .second-bar
+                        .third-bar
+        #sidebar.sidebar
+            block menu
+        main.main

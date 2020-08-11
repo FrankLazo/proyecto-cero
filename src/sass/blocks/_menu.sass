@@ -1,0 +1,33 @@
+.main-nav
+     @include laptop
+        display: flex
+        align-items: center
+        height: 100%
+
+.main-menu
+    @include reset-list
+    width: 100%
+    box-shadow: 0 0 10px #222
+
+    @include laptop
+        box-shadow: none
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 3rem
+        border-bottom: 1px solid #222
+        text-transform: uppercase
+
+        @include laptop
+            border-bottom: none
+
+        a:link
+            color: #ccc
+            text-decoration: none
+
+        a:visited
+            color: #ccc
+    
+   
