@@ -7,7 +7,6 @@
 .main-menu
     @include reset-list
     width: 100%
-    box-shadow: 0 0 10px #222
 
     @include laptop
         box-shadow: none
@@ -17,17 +16,17 @@
         justify-content: center
         align-items: center
         height: 3rem
-        border-bottom: 1px solid #222
+        border-bottom: 1px solid $dark-color
         text-transform: uppercase
 
         @include laptop
             border-bottom: none
 
         a:link
-            color: #ccc
+            color: $text-color
             text-decoration: none
 
         a:visited
-            color: #ccc
+            color: $text-color
     
    
