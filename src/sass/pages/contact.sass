@@ -1,0 +1,27 @@
+.contact
+    background-color: $dark-color
+    height: 125vh
+    text-align: center
+    position: relative
+
+    @include laptop
+        height: calc(100vh - 150px)
+        position: relative
+
+    &__map
+        width: 100%
+        text-align: center
+
+        & iframe
+            width: 320px
+            height: 250px
+            margin-top: 2rem
+
+            @include laptop
+                width: 320px
+                height: 300px
+
+
+        @include laptop
+            width: 50%
+            margin: 0 auto 2rem

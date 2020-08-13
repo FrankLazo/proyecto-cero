@@ -3,3 +3,32 @@ block menu
     include ../includes/main-menu
 block title
     h1.title= pages[2]
+block main
+    .contact
+        .contact__form
+            form.form-contact
+                .form-contact__fields
+                    input(type="text" name="name" placeholder="name").form-contact__input
+                    input(type="text" name="mail" placeholder="mail").form-contact__input
+                    input(type="text" name="subject" placeholder="subject").form-contact__input
+                .form-contact__field
+                    textarea(name="message" placeholder="message").form-contact__textarea
+            .form-contact__field
+                input(type="submit", value="Send").form__submit
+
+        .contact__map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7917.454957437962!2d-78.51674710959254!3d-7.157473270019596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25aff6c52467d%3A0xe2417b061497fef2!2sCerro%20Santa%20Apolonia!5e0!3m2!1ses-419!2spe!4v1597304511243!5m2!1ses-419!2spe', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+        
+        .social
+            .social__icon
+                i.fab.fa-twitter-square
+                i.fab.fa-twitter-square
+            .social__icon
+                i.fab.fa-instagram
+                i.fab.fa-instagram
+            .social__icon
+                i.fab.fa-youtube-square
+                i.fab.fa-youtube-square
+            .social__icon
+                i.fab.fa-pinterest-square
+                i.fab.fa-pinterest-square
