@@ -1,5 +1,8 @@
 .sidebar
-    margin-top: 3rem
+    position: fixed
+    background-color: $background-color
+    width: 100%
+    height: 100vh
     transform: translateY(-100%)
     transition: transform 500ms ease-in-out
 
@@ -7,6 +10,8 @@
         transform: translateY(0)
 
     @include laptop
+        // position: static
+        width: 15%
         margin-top: 0
         grid-row: 1 / -1
         grid-column: 1 / 2

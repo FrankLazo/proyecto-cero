@@ -1,0 +1,40 @@
+.form
+    width: 100%
+    max-width: 360px
+    background-color: $dark-color-2
+    padding: 1rem
+    border-radius: 1rem
+
+    &__field
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    
+    &__label,
+    &__input
+        width: 100%
+        background: none
+        border: none
+        margin-bottom: 1rem
+        outline: none
+        color: $text-color
+
+    &__input
+        border-bottom: 1px solid $text-color
+        margin-bottom: 2rem
+
+    &__submit
+        display: inline-block
+        padding: .5rem 1rem
+        border-radius: .25rem
+        background-color: $primary-color
+        color: $text-color
+        border: none
+        cursor: pointer
+        transition: transform 100ms
+        outline: none
+
+        &:active,
+        &:focus
+            transform: scale(.9)
